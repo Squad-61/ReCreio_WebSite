@@ -104,6 +104,4 @@ dist
 .tern-port
 
 # Pre Processors
-**/*.scss
-**/*.sass
-**/*.map.css
+**/*.map*
