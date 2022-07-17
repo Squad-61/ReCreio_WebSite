@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boas Vindas!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylecss.css">
-    <!-- Favicons -->
-
-<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
-<meta name="theme-color" content="#712cf9">
-  </head>
+  <title>Boas Vindas!</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./stylecss.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
 
 
 <body class="text-center">
-    <!---INICIO MENU-->
+  <!---INICIO MENU-->
   <header class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg bg-light px-3 py-4">
       <a class="navbar-brand" href="index.html">
-        <img width="150px" src="./public/assets/navbar2.png">
+        <img width="150px" src="/public/assets/images/brand.png">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile" aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
+        aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navMobile">
@@ -39,10 +33,11 @@
             <a class="nav-link" href="#"> Feed </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Atividades</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Atividades</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">Jogos</a>
+                <a class="dropdown-item" href="/public/pages/games/">Jogos</a>
               </li>
               <li>
                 <a class="dropdown-item" href="#">
@@ -69,21 +64,22 @@
       </div>
     </nav>
   </header>
-<!---FIM MENU-->
+  <!---FIM MENU-->
   <main class="form-signin w-100 m-auto">
     <div class="video_guia">
       <video class="video_guia" width="1200" height="600" autoplay controls>
-        <source src="./guia_cadastro.mp4" type="video/mp4">
+        <source src="/public/assets/videos/guia_cadastro.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="botao_cadastro">   
+    <div class="botao_cadastro">
       <div class="botao_cadastro">
-        <button class="signup_button" type="submit"><a href="./Cadastro.html" alt="cadastro"><img src="./cadastro.png" width="300" height="120"></a></button>
+        <button class="signup_button" type="submit"><a href="#" alt="cadastro"><img
+              src="/public/assets/images/cadastro.png" width="300" height="120"></a></button>
       </div>
     </div>
     <form>
-      <img class="mb-4" src="./RECREIO.png" alt="" width="115" height="85">
-      <h1 class="h3 mb-3 fw-normal">Por favor, faça login.</h1>    
+      <img class="mb-4" src="/public/assets/images/recreio.png" alt="" width="115" height="85">
+      <h1 class="h3 mb-3 fw-normal">Por favor, faça login.</h1>
       <div class="form-floating">
         <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com.br">
         <label for="floatingInput">Endereço de E-mail</label>
@@ -91,7 +87,7 @@
       <div class="form-floating">
         <input type="password" class="form-control" id="floatingPassword" placeholder="*********">
         <label for="floatingPassword">Senha</label>
-      </div>   
+      </div>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" value="remember-me"> Lembrar Usuário
@@ -100,7 +96,7 @@
       <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
     </form>
   </main>
- <!---Começo Rodapé-->
+  <!---Começo Rodapé-->
   <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -108,10 +104,17 @@
     </div>
     <!-- Copyright -->
   </footer>
-   <!---FIM Rodapé-->
-   
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <!---FIM Rodapé-->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
