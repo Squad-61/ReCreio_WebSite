@@ -25,49 +25,71 @@
       </ul>
     </nav>
   </header>
-  <section class="py-5 container-fluid d-flex justify-content-center align-items-center">
-    <section class="gameScreen">
+  <section class="container-fluid flex-column gameScreen">
+    <section class="d-flex flex-column justify-content-center align-items-center">
+      <section class="container-forca">
+        <svg height="250" width="200" class="forca">
+          <!-- forca -->
+          <line x1="60" y1="20" x2="140" y2="20" />
+          <line x1="140" y1="20" x2="140" y2="50" />
+          <line x1="60" y1="20" x2="60" y2="230" />
+          <line x1="20" y1="230" x2="100" y2="230" />
 
-      <svg height="250" width="200" class="forca">
-        <!-- forca -->
-        <line x1="60" y1="20" x2="140" y2="20" />
-        <line x1="140" y1="20" x2="140" y2="50" />
-        <line x1="60" y1="20" x2="60" y2="230" />
-        <line x1="20" y1="230" x2="100" y2="230" />
-
-        <!-- cabeça -->
-        <circle cx="140" cy="70" r="20" class="forca-parte" />
-        <!-- corpo -->
-        <line x1="140" y1="90" x2="140" y2="150" class="forca-parte" />
-        <!-- braços -->
-        <line x1="140" y1="120" x2="120" y2="100" class="forca-parte" />
-        <line x1="140" y1="120" x2="160" y2="100" class="forca-parte" />
-        <!-- pernas -->
-        <line x1="140" y1="150" x2="120" y2="180" class="forca-parte" />
-        <line x1="140" y1="150" x2="160" y2="180" class="forca-parte" />
-      </svg>
-      <section class="d-flex flex-column justify-content-between align-items-center">
-        <section class="letras-erradas-container">
-          <h3> Letras Eradas: </h3>
-        </section>
-        <section class="palavra-secreta-container">
-          <h3> Letras Corretas: </h3>
-        </section>
+          <!-- cabeça -->
+          <circle cx="140" cy="70" r="20" class="d-none" id="forca-cabeca" />
+          <!-- corpo -->
+          <line x1="140" y1="90" x2="140" class="d-none" y2="150" id="forca-corpo" />
+          <!-- braços -->
+          <line x1="140" y1="120" x2="120" class="d-none" y2="100" id="forca-braco1" />
+          <line x1="140" y1="120" x2="160" class="d-none" y2="100" id="forca-braco2" />
+          <!-- pernas -->
+          <line x1="140" y1="150" x2="120" class="d-none" y2="180" id="forca-perna1" />
+          <line x1="140" y1="150" x2="160" class="d-none" y2="180" id="forca-perna2" />
+        </svg>
       </section>
     </section>
-    <section class="aviso-palavra-repetida"></section>
-    <section class="popup-container d-flex visually-hidden">
-      <div class="popup">
-        <h2 id="message"></h2>
-        <button class="btn btn-secundary" id="btn-play">
-          Jogar Novamente
-        </button>
+    <section
+      class="container col row-cols-9 d-flex justify-content-center align-items-center flex-column gap-2 keyboard">
+      <div class="col">
+        <button class="btn btn-light btn-keyboard" id="tecla-A"> A </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-B"> B </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-C"> C </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-D"> D </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-E"> E </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-F"> F </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-G"> G </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-H"> H </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-I"> I </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-light btn-keyboard" id="tecla-J"> J </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-K"> K </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-L"> L </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-M"> M </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-N"> N </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-O"> O </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-P"> P </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-Q"> Q </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-R"> R </button>
+      </div>
+      <div class="col">
+        <button class="btn btn-light btn-keyboard" id="tecla-S"> S </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-T"> T </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-U"> U </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-V"> V </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-W"> W </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-X"> X </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-Y"> Y </button>
+        <button class="btn btn-light btn-keyboard" id="tecla-Z"> Z </button>
+        <button class="btn btn-light btn-keyboard btn-reset" id="reset"> <i></i> </button>
       </div>
     </section>
-  </section>
 
+  </section>
   <script src="../javascript/jogoDaForca.js" type="module"></script>
   <!-- Bootstrap JavaScript Libs -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
