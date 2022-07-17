@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --color-white: #f1f6f9;
+  --color-white-secondary: #f2f4fb;
+  --color-black: #373a40;
+  --color-black-secondary: #393e46;
+  --color-green: #ccf6c8;
+  --color-green-secondary: #28df99;
+
+  font-size: 62.5%;
+}
+
+.navbar {
+  padding: 2rem;
+}
+
+.navbar>.icon-back>i.material-icons,
+.navbar>.icon-back>span.material-icons {
+  font-size: 4rem;
+  color: initial;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: hue;
+  backdrop-filter: drop-shadow(4px 0px 2rem #000);
+  -webkit-backdrop-filter: drop-shadow(4px 0px 2rem #000);
+  transition: background 500ms;
+
+}
+
+.navbar>.icon-back>i.material-icons:hover,
+.navbar>.icon-back>span.material-icons:hover {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: background 500ms;
+}
