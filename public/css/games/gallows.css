@@ -1,0 +1,122 @@
+/*
+  Author: Julio Ceno
+  Repositories: https://github.com/julioceno/hangmanGame.github.io
+  Alterado por: Guilherme A.F Sales
+*/
+
+.gallows-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallows {
+  /* height: 50vh; */
+  height: 40rem;
+}
+
+#stickMan {
+  position: relative;
+  right: 359px;
+  top: 130px;
+}
+
+#head {
+  position: absolute;
+  height: 3rem;
+  margin-left: 212px;
+  margin-top: 16px;
+}
+
+#body {
+  position: absolute;
+  height: 10rem;
+  margin-left: 184px;
+  margin-top: 23px;
+}
+
+#armLeft {
+  position: absolute;
+  height: 10rem;
+  margin-left: 184px;
+  margin-top: 23px;
+}
+
+#armRight {
+  position: absolute;
+  height: 10rem;
+  margin-left: 184px;
+  margin-top: 23px;
+}
+
+#legLeft {
+  position: absolute;
+  height: 10rem;
+  margin-left: 186px;
+  margin-top: 22px;
+}
+
+#legRight {
+  position: absolute;
+  height: 10rem;
+  margin-left: 184px;
+  margin-top: 23px;
+}
+
+/* Animações */
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(-16);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-up {
+  animation-name: up;
+  animation-duration: 300ms;
+  animation-fill-mode: backwards;
+}
+
+
+#head {
+  animation-delay: 50ms;
+}
+
+#body {
+  animation-delay: 100ms;
+
+}
+
+#armLeft,
+#armRight {
+  animation-delay: 150ms;
+}
+
+#legLeft,
+#legRight {
+  animation-delay: 200ms;
+}
+
+
+/*letters and traces*/
+.letter-container {
+  margin: 3rem 0 3rem 2.5rem;
+}
+
+.letter-container .letter {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 5rem;
+  text-align: center;
+  color: var(--color-white);
+
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  width: 5rem;
+  border-bottom: 1rem solid var(--color-white);
+}

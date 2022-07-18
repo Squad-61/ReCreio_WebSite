@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- 
+  Author: Julio Ceno
+  Repositories: https://github.com/julioceno/hangmanGame.github.io
+  Alterado por: Guilherme A.F Sales
+ -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da forca</title>
+
+  <link rel="stylesheet" href="/public/css/games/gallows.css" />
+  <link rel="stylesheet" href="/public/css/games/pop-up.css" />
+  <link rel="stylesheet" href="/public/css/games/page-landing.css" />
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Fontes-->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="container-fluid">
+    <nav class="navbar">
+      <a href="./index.html" class="btn icon-back">
+        <i class="material-icons">arrow_back</i>
+      </a>
+    </nav>
+  </header>
+  <div id="page-landing">
+    <div id="container">
+      <div class="pop-up-container animate-appear" id="pop-up-container">
+        <div class="pop-up">
+          <p id="result-game-popup"> </p>
+          <p id="result-word-popup"> </p>
+          <div id="word-corret-popup"> </div>
+
+          <button type="button" id="button-reload" onclick="location.reload()"> <img
+              src="/public/assets/images/buttons/reload.png" alt="reload"></button>
+        </div>
+
+      </div>
+
+      <section>
+        <div class="gallows-container">
+          <div>
+            <img class="gallows" src="/public/assets/images/stickman/gallows.png" alt="Forca" />
+          </div>
+          <!-- Criei essa div pois eu tive que colocar a gallows-container  com display flex pra a forca e o sitck ficarem emparelhados-->
+          <div id="stickMan">
+            <img id="head" class="animate-up" src="/public/assets/images/stickman/hangmangame-head.png" alt="Cabeça" />
+
+            <img id="body" class="animate-up" src="/public/assets/images/stickman/hangmangame-body.png" alt="Corpo" />
+            <img id="armLeft" class="animate-up" src="/public/assets/images/stickman/hangmangame-arm-left.png"
+              alt="braço esquerdo" />
+            <img id="armRight" class="animate-up" src="/public/assets/images/stickman/hangmangame-arm-right.png"
+              alt="braço direito" />
+            <img id="legLeft" class="animate-up" src="/public/assets/images/stickman/hangmangame-leg-left.png"
+              alt="perna esquerda" />
+            <img id="legRight" class="animate-up" src="/public/assets/images/stickman/hangmangame-leg-right.png"
+              alt="perna direita" />
+
+
+          </div>
+        </div>
+
+        <div class="status-letter" id="status-letter">
+
+          <div class="letter-container" id="letter-container">
+
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div id="dissappearGameConfig">
+          <!--Resposável por da um display none nesses dados lá no script -->
+          <div class="adding-word">
+            <input type="text" id="wordPage" placeholder="Coloque a palavra" />
+            <input type="button" onclick="addWord()" />
+          </div>
+
+          <button class="adding-word-alone" onclick="addWordAlone()">Jogar sozinho</button>
+        </div>
+
+        <div id="appearContentLetter">
+
+          <div class="wordTip" id="wordTip"> </div>
+          <div class="adding-letter">
+            <input type="text" id="letterPage" placeholder="Letra" />
+            <input type="button" onclick="addLetter()" />
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+<script src="/public/javascript/jogoDaForca.js"></script>
+
+</html>
