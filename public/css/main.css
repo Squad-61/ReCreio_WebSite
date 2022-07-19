@@ -84,3 +84,29 @@ html {
 .signup_button {
   background-color: #0f0e47
 }
+
+.qm_somos {
+  width: 980;
+  padding: 2%;
+  background-color: rgb(81, 58, 124);
+  color: white;
+}
+
+.table_body {
+  color: white;
+}
+
+.table_head {
+  color: white;
+  font-weight: bold;
+}
+
+.texto_qmsomos {
+  margin-top: 3%;
+  margin-left: 19%;
+  padding: 2%;
+  border: 4px;
+  border-style: double;
+  height: 550px;
+  width: 850px;
+}
