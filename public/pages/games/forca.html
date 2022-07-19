@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <!-- 
   Author: Julio Ceno
   Repositories: https://github.com/julioceno/hangmanGame.github.io
@@ -8,12 +8,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jogo da forca</title>
-
-  <link rel="stylesheet" href="/public/css/games/gallows.css" />
-  <link rel="stylesheet" href="/public/css/games/pop-up.css" />
-  <link rel="stylesheet" href="/public/css/games/page-landing.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/games/gallows.css" />
+  <link rel="stylesheet" href="../../css/games/pop-up.css" />
+  <link rel="stylesheet" href="../../css/games/page-landing.css" />
+  <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
   <!-- Google Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Fontes-->
@@ -24,7 +24,7 @@
 <body>
   <header class="container-fluid">
     <nav class="navbar">
-      <a href="./index.html" class="btn icon-back">
+      <a href="index.html" class="btn icon-back">
         <i class="material-icons">arrow_back</i>
       </a>
     </nav>
@@ -38,7 +38,7 @@
           <div id="word-corret-popup"> </div>
 
           <button type="button" id="button-reload" onclick="location.reload()"> <img
-              src="/public/assets/images/buttons/reload.png" alt="reload"></button>
+              src="../../assets/images/buttons/reload.png" alt="reload"></button>
         </div>
 
       </div>
@@ -46,23 +46,21 @@
       <section>
         <div class="gallows-container">
           <div>
-            <img class="gallows" src="/public/assets/images/stickman/gallows.png" alt="Forca" />
+            <img class="gallows" src="../../assets/images/stickman/gallows.png" alt="Forca" />
           </div>
           <!-- Criei essa div pois eu tive que colocar a gallows-container  com display flex pra a forca e o sitck ficarem emparelhados-->
           <div id="stickMan">
-            <img id="head" class="animate-up" src="/public/assets/images/stickman/hangmangame-head.png" alt="Cabeça" />
+            <img id="head" class="animate-up" src="../../assets/images/stickman/hangmangame-head.png" alt="Cabeça" />
 
-            <img id="body" class="animate-up" src="/public/assets/images/stickman/hangmangame-body.png" alt="Corpo" />
-            <img id="armLeft" class="animate-up" src="/public/assets/images/stickman/hangmangame-arm-left.png"
+            <img id="body" class="animate-up" src="../../assets/images/stickman/hangmangame-body.png" alt="Corpo" />
+            <img id="armLeft" class="animate-up" src="../../assets/images/stickman/hangmangame-arm-left.png"
               alt="braço esquerdo" />
-            <img id="armRight" class="animate-up" src="/public/assets/images/stickman/hangmangame-arm-right.png"
+            <img id="armRight" class="animate-up" src="../../assets/images/stickman/hangmangame-arm-right.png"
               alt="braço direito" />
-            <img id="legLeft" class="animate-up" src="/public/assets/images/stickman/hangmangame-leg-left.png"
+            <img id="legLeft" class="animate-up" src="../../assets/images/stickman/hangmangame-leg-left.png"
               alt="perna esquerda" />
-            <img id="legRight" class="animate-up" src="/public/assets/images/stickman/hangmangame-leg-right.png"
+            <img id="legRight" class="animate-up" src="../../assets/images/stickman/hangmangame-leg-right.png"
               alt="perna direita" />
-
-
           </div>
         </div>
 
@@ -99,6 +97,6 @@
   </div>
 </body>
 
-<script src="/public/javascript/jogoDaForca.js"></script>
+<script src="../../javascript/jogoDaForca.js"></script>
 
 </html>
