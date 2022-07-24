@@ -1,4 +1,4 @@
-# Recreio Web Site
+# ReCreio Web Site
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
@@ -8,10 +8,10 @@
 ![Bitbucket open issues](https://img.shields.io/github/issues-raw/squad-61/web_site?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/github/issues-pr-raw/squad-61/web_site?style=for-the-badge)
 
-<img src="exemplo-image.png" alt="exemplo imagem">
+<img src=".github/brand.png" alt="Logo da ReCreio">
 
 <!-- Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler. -->
-> Buscamos auxiliar crianças 6 a 13 anos de idade a aprimorar e ecentivar a pratica de leitura e escrita, através de jogos, aulase e atividades ludicas e intuitivas, junto aos pais e professores. 
+> Buscamos auxiliar crianças 6 a 13 anos de idade a aprimorar e incentivar a pratica de leitura e escrita, através de jogos, aulas e atividades lúdicas e intuitivas, junto aos pais e professores.
 
 ### Ajustes e melhorias
 
@@ -28,8 +28,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ## ☕ Acessando o Site da Recreio
 
 Para acessar o site em produção acesse [aqui](https://squad-61.github.io/Web_Site/).
-
-<!-- Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Fornece uma referência de opções para pontos de bônus! -->
 
 ## 📫 Contribuindo para o Projeto Recreio
 <!--- Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado --->
@@ -50,7 +48,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/Engeminas">
         <img src="https://avatars3.githubusercontent.com/u/108931085" width="100px;" alt="Foto do Diego no GitHub"/><br>
         <sub>
           <b>Diego</b>
@@ -58,7 +56,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/Frotas">
         <img src="https://avatars3.githubusercontent.com/u/89676387" width="100px;" alt="Foto do Guilherme Augusto no GitHub"/><br>
         <sub>
           <b>Guilherme Augusto</b>
@@ -66,7 +64,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/Guimillen">
         <img src="https://avatars3.githubusercontent.com/u/108336927" width="100px;" alt="Foto do Guilherme Millen no GitHub"/><br>
         <sub>
           <b>Guilherme Millen</b>
@@ -74,7 +72,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://github.com/GabrielArthu">
         <img src="https://avatars3.githubusercontent.com/u/98462847" width="100px;" alt="Foto do Gabriel Arthur no GitHub"/><br>
         <sub>
           <b>Gabriel Arthur</b>
@@ -82,18 +80,26 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/107078520" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/niasbezerra">
+        <img src="https://avatars3.githubusercontent.com/u/107078520" width="100px;" alt="Foto do Josenias Bezerra no GitHub"/><br>
         <sub>
           <b>Josenias Bezerra</b>
         </sub>
       </a>
     </td>
     <td align="center">
-      <a href="#">
-        <img src="https://avatars3.githubusercontent.com/u/94967774" width="100px;" alt="Foto do Steve Jobs"/><br>
+      <a href="https://github.com/lcoa84">
+        <img src="https://avatars3.githubusercontent.com/u/94967774" width="100px;" alt="Foto do Luiz Almeida no GitHub"/><br>
         <sub>
           <b>Luiz Almeida</b>
+        </sub>
+      </a>
+    </td>
+        <td align="center">
+      <a href="https://github.com/rebecafrutuoso">
+        <img src="https://avatars3.githubusercontent.com/u/94967774" width="100px;" alt="Foto da Rebeca Costa no GitHub"/><br>
+        <sub>
+          <b>Rebeca Costa</b>
         </sub>
       </a>
     </td>
