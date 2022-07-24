@@ -1,5 +1,5 @@
 ---
-name: Requisição de Recurso
+name: Requisicao de Recurso
 about: Sugestão de ideias para o projeto
 title: "[Feat] Titulo do Recurso "
 labels: enhancement
