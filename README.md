@@ -8,7 +8,9 @@
 ![Bitbucket open issues](https://img.shields.io/github/issues-raw/squad-61/web_site?style=for-the-badge)
 ![Bitbucket open pull requests](https://img.shields.io/github/issues-pr-raw/squad-61/web_site?style=for-the-badge)
 
-<img src=".github/brand.png" alt="Logo da ReCreio">
+<div align="center">
+  <img src=".github/brand.png" alt="Logo da ReCreio">
+</div>
 
 <!-- Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler. -->
 > Buscamos auxiliar crianças 6 a 13 anos de idade a aprimorar e incentivar a pratica de leitura e escrita, através de jogos, aulas e atividades lúdicas e intuitivas, junto aos pais e professores.
@@ -97,7 +99,7 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
     </td>
         <td align="center">
       <a href="https://github.com/rebecafrutuoso">
-        <img src="https://avatars3.githubusercontent.com/u/94967774" width="100px;" alt="Foto da Rebeca Costa no GitHub"/><br>
+        <img src="https://avatars.githubusercontent.com/u/108592549?v=4" width="100px;" alt="Foto da Rebeca Costa no GitHub"/><br>
         <sub>
           <b>Rebeca Costa</b>
         </sub>
