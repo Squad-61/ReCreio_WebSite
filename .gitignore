@@ -105,3 +105,6 @@ dist
 
 # Pre Processors
 **/*.map*
+
+# Other Files and Folders
+.*ignore/**
