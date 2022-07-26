@@ -5,17 +5,19 @@
   <title>Recreio - Home Page</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./public/css/main.css">
+  <link rel="stylesheet" href="./public/css/mobile.css">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body theme="dark" class="bg-brand-primary">
+<body theme="dark">
   <!---INICIO MENU-->
-  <header class="container-fluid p-0 navbar_style">
+  <header class="container-fluid p-0 navbar-container">
 
-    <nav class="navbar navbar-expand-lg bg-info justify-content-between align-items-center wrapper">
+    <nav class="navbar navbar-expand-lg justify-content-between align-items-center wrapper">
       <a class="navbar-brand " href="#">
         <img class="img-brand" src="./public/assets/images/brand-logo.png">
       </a>
@@ -24,7 +26,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navMobile">
-        <ul class="navbar-nav">
+        <ul class="nav">
           <li class="nav-item active">
             <a class="nav-link" href="./public/pages/quem_somos.html"> Quem Somos </a>
           </li>
@@ -54,27 +56,21 @@
             <a class="nav-link" href="./public/pages/contato.html"> Contato </a>
           </li>
         </ul>
-        <a class="btn btn-outline-primary" href="#">Cadastre-se </a>
+        <a class="btn btn-outline-primary btn-signup" href="#">Cadastre-se </a>
       </div>
     </nav>
   </header>
   <!---FIM MENU-->
-  <main class="container-fluid px-0 py-3 m-0 content">
+  <main class="container-fluid px-0 py-5 m-0 content">
     <section class="container-fluid video-container">
-      <video class="m-0 video-guia" loop controls>
-        <source src="./public/assets/videos/guia_cadastro.mp4" type="video/mp4">
+      <video class="video" width="560" hight="480" controls>
+        <source type="video/mp4" src="./public/assets/videos/guia_cadastro.mp4">
+        Este navegador não possui support para reproduzir o vídeo, acesse <a href="#">aqui</a> para relatar o ocorrido.
       </video>
-
     </section>
 
     <section
       class="container-fluid d-flex flex-column gap-1 py-3 px-3 m-0 justify-content-center align-items-center wrapper">
-      <!-- <header class="d-flex flex-column justify-content-center align-items-center w-50">
-        <a href="./public/pages/cadastro/cadastro.html" alt="cadastro">
-          <img class="img-fluid" src="./public/assets/images/cadastro_ilustracao.png">
-        </a>
-        <img class="img-fluid img-brand" src="./public/assets/images/brand-logo.png" alt="Recreio">
-      </header> -->
       <form class="d-flex flex-column gap-3 py-3 form-container">
         <h3 class="h3 fw-normal text-center">
           Log In
@@ -98,28 +94,25 @@
         <button class="btn btn-primary mt-2" type="submit">
           Entrar
         </button>
-        <div class="text-center">
-          Casso não possua uma conta cadastre-se
-          <a href="./public/pages/cadastro/cadastro.html" class="btn p-0 text-primary"> aqui </a>
-        </div>
+        <p class="signIn text-center">
+          Não possui uma conta cadastre-se
+          <a href="./public/pages/cadastro/cadastro.html" class="btn-link"> aqui </a>
+        </p>
       </form>
     </section>
   </main>
   <!---Começo Rodapé-->
   <footer class="footer-container wrapper">
     <!-- Copyright -->
-    <div class="text-center">
-      © 2022 Copyright:
-      <a class="text-dark" href="#">
-        RecodePro 2022 - Módulo 2 Atividade prática Squad 61.
-      </a>
-    </div>
+    <p class="text-center">
+      <a href="https://github.com/squad-61" target="_blank">Recreio</a> ©2022 Copyright
+      <a href="https://recodepro.org.br/" target="_blank">RecodePro 2022</a> - Módulo 2 Atividade prática Squad 61.
+    </p>
     <!-- Copyright -->
   </footer>
   <!---FIM Rodapé-->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>

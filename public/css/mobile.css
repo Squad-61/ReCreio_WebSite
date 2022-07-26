@@ -1,0 +1,181 @@
+/* ============ Start Variables and Themes ============ */
+:root {
+
+  /* Cores da Marca */
+  --brand-main-color: hsl(200, 80%, 50%);
+  --brand-secondary-color: hsl(160, 70%, 50%);
+  --brand-complementary-color: hsl(51, 95%, 56%);
+
+  /* Themes Colors */
+
+  /* Dark */
+  --bg-color-dark: hsl(220, 90%, 30%);
+  --text-color-dark: hsl(0, 0%, 99%);
+
+  /* Light */
+  --bg-color-light: hsl(210, 100%, 71%);
+  --text-color-light: hsl(0, 0%, 13%);
+
+  /* Text Colors */
+  --text-color-danger: hsl(0, 70%, 60%);
+  --text-color-success: hsl(150, 50%, 40%);
+  --text-color-warning: hsl(50, 90%, 50%);
+  --text-color-green: hsl(140, 70%, 35%);
+  --text-color-blue-purple: hsl(225, 50%, 40%);
+  --text-color-orange: hsl(39, 100%, 50%);
+  --text-color-primary: hsl(200, 70%, 40%);
+  --text-color-black: hsl(0, 0%, 6%);
+
+  /* Background Color */
+  --bg-color-blue: hsl(191, 73%, 46%);
+  --bg-color-beige: hsl(60, 55%, 90%);
+  --bg-color-white: hsl(0, 0%, 100%);
+  --bg-color-black: hsl(0, 0%, 6%);
+}
+
+body[theme="dark"] {
+  color: var(--text-color-dark);
+  background-color: var(--bg-color-dark);
+}
+
+body[theme="dark"] a {
+  color: var(--text-color-black);
+}
+
+body[theme="dark"] .btn,
+body[theme="dark"] .btn-primary {
+  color: var(--text-color-light);
+  border-color: var(--brand-main-color);
+  background-color: var(--brand-main-color);
+}
+
+body[theme="dark"] .btn-outline-primary {
+  color: var(--text-color-light);
+  border-color: var(--brand-main-color);
+  background-color: transparent;
+}
+
+body[theme="dark"] .btn-outline-primary:hover {
+  color: var(--text-color-dark);
+  border-color: var(--brand-main-color);
+  background-color: var(--brand-main-color);
+}
+
+body[theme="dark"] .btn-primary:hover {
+  color: var(--text-color-dark);
+  border-color: var(--bg-color-blue);
+  background-color: var(--bg-color-blue);
+}
+
+body[theme="dark"] .form-control,
+body[theme="dark"] .form-label {
+  color: var(--text-color-light);
+}
+
+body[theme="dark"] .form-container a {
+  color: var(--text-color-orange);
+}
+
+body[theme="dark"] .navbar-container {
+  background-color: var(--bg-color-light);
+}
+
+body[theme="dark"] .footer-container {
+  color: var(--text-color-light);
+  background-color: var(--brand-complementary-color);
+}
+
+body[theme="dark"] .footer-container a {
+  color: var(--text-color-blue-purple);
+}
+
+body[theme="light"] {}
+
+/* ============ End Variables and Themes ============ */
+
+/* START MOBILE FIRST */
+/* ========= Start NavBar Style ========= */
+
+.navbar {
+  display: flex;
+  padding: 0rem 1rem !important;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  margin: 1rem 0 !important;
+  padding: 0 !important;
+  min-width: fit-content;
+}
+
+.navbar-brand>.img-brand {
+  width: calc(100px + 15vw);
+}
+
+.nav {
+  margin: 1rem 0 !important;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-signup {
+  margin: 1rem 0;
+}
+
+/* ========= End NavBar Style ========= */
+
+/* ========= Start Main Content Style ========= */
+.main-container {
+  width: 100%;
+}
+
+.video-container {
+  margin: 0rem -1rem 0rem -1rem;
+  padding: 28%;
+  position: relative;
+}
+
+.video {
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  cursor: pointer;
+  position: absolute;
+  border-radius: .3rem;
+}
+
+.form-container {
+  width: 100%;
+  margin: .5rem 0;
+}
+
+/* ========= End Main-Container Style ========= */
+
+/* ========= Start Footer Style ========= */
+.footer-container {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  padding: 2rem 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========= End Footer Style ========= */
+/* END MOBILE FIRST */
+
+/* START DESKTOP STYLE */
+@media screen AND (min-width: 700px) {
+
+  /* Media Query for 700dp and up devices width */
+  .form-container {
+    width: 50%;
+  }
+}
+
+/* END DESKTOP STYLE */
