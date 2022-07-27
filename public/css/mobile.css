@@ -91,6 +91,7 @@
   --text-color-orange: var(--color-orange-500);
 
   /* Background Color */
+  --bg-color-red: var(--color-red-100);
   --bg-color-blue: var(--color-blue-100);
   --bg-color-beige: var(--color-beige-100);
   --bg-color-white: var(--color-white-100);
@@ -193,7 +194,6 @@ body {
 
 .main-container {
   width: 100%;
-  height: 100vmin;
   background-color: var(--bg-color-beige);
 }
 
