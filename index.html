@@ -4,7 +4,6 @@
 <head>
   <title>Recreio - Home Page</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./public/css/main.css">
   <link rel="stylesheet" href="./public/css/mobile.css">
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +13,7 @@
 </head>
 
 <body>
-  <!---INICIO MENU-->
+
   <header class="container-fluid p-0 navbar-container">
 
     <nav class="navbar navbar-expand-lg justify-content-between align-items-center ">
@@ -38,7 +37,7 @@
               aria-expanded="false">Atividades</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./public/pages/games/jogos.html">Jogos</a>
+                <a class="dropdown-item" href="./public/pages/games/">Jogos</a>
               </li>
               <li>
                 <a class="dropdown-item" href="./public/pages/games/licoes_leitura.html">
@@ -56,12 +55,12 @@
             <a class="nav-link navbar-link" href="./public/pages/contato.html"> Contato </a>
           </li>
         </ul>
-        <a class="btn btn-outline-primary btn-signup" href="#">Cadastre-se </a>
+        <a class="btn btn-outline-primary btn-signup" href="./public/pages/cadastro/cadastro.html"> Cadastre-se </a>
       </div>
     </nav>
   </header>
-  <!---FIM MENU-->
-  <main class="container-fluid px-0 py-5 m-0 main-container">
+
+  <main class="container-fluid main-container">
     <section class="container-fluid video-container">
       <video class="video" width="560" hight="480" controls>
         <source type="video/mp4" src="./public/assets/videos/guia_cadastro.mp4">
@@ -100,16 +99,14 @@
       </form>
     </section>
   </main>
-  <!---Começo Rodapé-->
+
   <footer class="footer-container">
-    <!-- Copyright -->
     <p class="text-center">
       <a href="https://github.com/squad-61" target="_blank">Recreio</a> ©2022 Copyright
       <a href="https://recodepro.org.br/" target="_blank">RecodePro 2022</a> - Módulo 2 Atividade prática Squad 61.
     </p>
-    <!-- Copyright -->
   </footer>
-  <!---FIM Rodapé-->
+
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
