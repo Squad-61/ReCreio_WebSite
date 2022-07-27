@@ -1,0 +1,45 @@
+.main-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.contact-container {
+  width: 100%;
+  padding: 0 1rem;
+  overflow-x: auto;
+  border-radius: .3rem;
+  background-color: var(--bg-color-white);
+}
+
+.table-body,
+.table-head {
+  width: 100%;
+  color: var(--text-color-black);
+}
+
+.table-head {
+  font-weight: bold;
+}
+
+.table-title {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
+.table-line {
+  text-align: center;
+
+}
+
+.table-text {
+  font-size: .8rem;
+  text-align: center;
+}
+
+.texto_qmsomos {
+  /* width: 850px; */
+  /* height: 550px; */
+  border: 4px;
+  padding: 2%;
+  margin-top: 3%;
+  margin-left: 19%;
+  border-style: double;
+}
