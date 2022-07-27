@@ -245,10 +245,54 @@ body {
 
 /* ========= End Footer Style ========= */
 
+/* Oculta a logo do desktop e exibe a logo do mobile */
+.visible-brand-inMobile {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+.visible-brand-inDesktop {
+  opacity: 0;
+  display: none;
+  visibility: hidden;
+}
+
 /* START DESKTOP STYLE */
 @media screen AND (min-width: 700px) {
 
+  /* Oculta a logo do mobile e exibe a logo do desktop */
+  .visible-brand-inMobile {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+  }
+
+  .visible-brand-inDesktop {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+  }
+
   /* Media Query for 700dp and up devices width */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .nav>.nav-item {
+    width: fit-content;
+  }
+
   .form-container {
     width: 50%;
   }
