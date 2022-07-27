@@ -13,11 +13,11 @@
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body theme="dark">
+<body>
   <!---INICIO MENU-->
   <header class="container-fluid p-0 navbar-container">
 
-    <nav class="navbar navbar-expand-lg justify-content-between align-items-center wrapper">
+    <nav class="navbar navbar-expand-lg justify-content-between align-items-center ">
       <a class="navbar-brand " href="#">
         <img class="img-brand" src="./public/assets/images/brand-logo.png">
       </a>
@@ -27,14 +27,14 @@
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navMobile">
         <ul class="nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="./public/pages/quem_somos.html"> Quem Somos </a>
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/quem_somos.html"> Quem Somos </a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./public/pages/feed.html"> Feed </a>
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/feed.html"> Feed </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            <a class="nav-link navbar-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
               aria-expanded="false">Atividades</a>
             <ul class="dropdown-menu">
               <li>
@@ -52,8 +52,8 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./public/pages/contato.html"> Contato </a>
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/contato.html"> Contato </a>
           </li>
         </ul>
         <a class="btn btn-outline-primary btn-signup" href="#">Cadastre-se </a>
@@ -61,7 +61,7 @@
     </nav>
   </header>
   <!---FIM MENU-->
-  <main class="container-fluid px-0 py-5 m-0 content">
+  <main class="container-fluid px-0 py-5 m-0 main-container">
     <section class="container-fluid video-container">
       <video class="video" width="560" hight="480" controls>
         <source type="video/mp4" src="./public/assets/videos/guia_cadastro.mp4">
@@ -69,8 +69,7 @@
       </video>
     </section>
 
-    <section
-      class="container-fluid d-flex flex-column gap-1 py-3 px-3 m-0 justify-content-center align-items-center wrapper">
+    <section class="container-fluid d-flex flex-column gap-1 py-3 px-3 m-0 justify-content-center align-items-center ">
       <form class="d-flex flex-column gap-3 py-3 form-container">
         <h3 class="h3 fw-normal text-center">
           Log In
@@ -102,7 +101,7 @@
     </section>
   </main>
   <!---Começo Rodapé-->
-  <footer class="footer-container wrapper">
+  <footer class="footer-container">
     <!-- Copyright -->
     <p class="text-center">
       <a href="https://github.com/squad-61" target="_blank">Recreio</a> ©2022 Copyright
