@@ -4,90 +4,104 @@
 <head>
   <title>Lições de Leitura</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="../../css/main.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../../css/mobile.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body class="text-center">
-  <!---INICIO MENU-->
-  <header class="container-fluid p-0 navbar_style">
+<body theme="dark" class="text-center">
+  
+  <header class="container-fluid p-0 navbar-container">
 
-    <nav class="navbar navbar-expand-lg bg-info px-2 py-3">
-      <a class="navbar-brand" href="index.html">
-        <img width="150px" src="../../assets/images/brand.png">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand .visible-brand-inMobile" href="#">
+        <img class="img-brand" src="./public/assets/images/brand-logo.png">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
         aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navMobile">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../about.html"> Quem Somos </a>
+        <a class="navbar-brand visible-brand-inDesktop" href="#">
+          <img class="img-brand" src="./public/assets/images/brand-logo.png">
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/about.html"> Quem Somos </a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="../feed.html"> Feed </a>
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/feed.html"> Feed </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            <a class="nav-link navbar-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
               aria-expanded="false">Atividades</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="./index.html">Jogos</a>
+                <a class="dropdown-item" href="./public/pages/games/">Jogos</a>
               </li>
               <li>
-                <a class="dropdown-item" href="./games/licoes_leitura.html">
+                <a class="dropdown-item" href="./public/pages/games/licoes_leitura.html">
                   Lições de Leitura
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="./leitura_assistida.html">
+                <a class="dropdown-item" href="./public/pages/games/leitura_assistida.html">
                   Leitura Assistida
                 </a>
               </li>
             </ul>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="../contato.html"> Contato </a>
+          <li class="nav-item">
+            <a class="nav-link navbar-link" href="./public/pages/contato.html"> Contato </a>
           </li>
         </ul>
-        <a class="btn btn-outline-primary" href="../cadastro.html">Cadastre-se </a>
+        <a class="btn btn-outline-primary btn-signup" href="./public/pages/cadastro/cadastro.html"> Cadastre-se </a>
       </div>
     </nav>
   </header>
-  <main>
-    <h2 class="video_header"> O Alfabeto!</h2>
-    <div class="video_guia">
-      <video class="video_guia" width="1200" height="600" loop controls>
+
+  <main class="container-fluid wrapper">
+    <section class="video-container d-flex flex-column gap-2 py-3">
+      <header class="video-header">
+        <h2 class="h2"> O Alfabeto!</h2>
+      </header>
+      <video class="m-0 video-guia" loop controls>
         <source src="../../assets/videos/licao_alfabeto.mp4" type="video/mp4">
       </video>
-    </div>
+    </section>
 
-    <h2 class="video_header2"> As Vogais!</h2>
-    <div class="video_guia">
-      <video class="video_guia" width="1200" height="600" loop controls>
+    <section class="video-container d-flex flex-column gap-2 py-3">
+      <header class="video-header">
+        <h2 class="h2"> As Vogais!</h2>
+      </header>
+      <video class="m-0 video-guia" loop controls>
         <source src="../../assets/videos/licao_vogais.mp4" type="video/mp4">
       </video>
-    </div>
+    </section>
 
-    <h2 class="video_header3"> As Sílabas!</h2>
-    <div class="video_guia">
-      <video class="video_guia" width="1200" height="600" loop controls>
+    <section class="video-container d-flex flex-column gap-2 py-3">
+      <header class="video-header">
+        <h2 class="h2"> As Sílabas!</h2>
+      </header>
+      <video class="m-0 video-guia" loop controls>
         <source src="../../assets/videos/licao_silabas.mp4" type="video/mp4">
       </video>
-    </div>
+    </section>
+    </section>
   </main>
-  
+
   <!---Começo Rodapé-->
-  <footer class="bg-light text-center text-lg-start">
+  <footer class="bg-light text-center text-lg-start footer-container wrapper">
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2022 Copyright: <a class="text-dark" href="#">RecodePro 2022 - Módulo 2 Atividade prática Squad 61.</a>
-    </div>
+    <p>
+      © 2022 Copyright:
+      <a class="text-dark" href="#">
+        RecodePro 2022 - Módulo 2 Atividade prática Squad 61.
+      </a>
+    </p>
     <!-- Copyright -->
   </footer>
   <!---FIM Rodapé-->
