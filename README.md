@@ -29,7 +29,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 ## ☕ Acessando o Site da Recreio
 
-Para acessar o site em produção acesse [aqui](https://squad-61.github.io/Web_Site/).
+Para acessar o site em produção acesse [aqui](https://squad-61.github.io/ReCreio_WebSite/).
 
 ## 📫 Contribuindo para o Projeto Recreio
 <!--- Se o seu README for longo ou se você tiver algum processo ou etapas específicas que deseja que os contribuidores sigam, considere a criação de um arquivo CONTRIBUTING.md separado --->
