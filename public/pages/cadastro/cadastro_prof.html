@@ -1,170 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-
-<head>
-  <title>Cadastre-se</title>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="../../assets/css/cadastro.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cadastro dos Pais">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>Cadastro do Professor(a)</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+    <link rel="stylesheet" href="../../css/cadastro.css">
+    <link rel="stylesheet" href="../../css/mobile.css">
+    <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+ 
 
-</head>
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<body>
-  <div class="navbar_style">
-    <header class="container-fluid p-0">
 
-      <nav class="navbar navbar-expand-lg bg-info px-2 py-3">
-        <a class="navbar-brand" href="../../index.html">
-          <img width="150px" src="../../assets/images/brand.png">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
-          aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navMobile">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="../about.html"> Quem Somos </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="../feed.html"> Feed </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                aria-expanded="false">Atividades</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="../games/index.html">Jogos</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../games/licoes_leitura.html">
-                    Lições de Leitura
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../games/leitura_assistida.html">
-                    Leitura Assistida
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="../contato.html"> Contato </a>
-            </li>
-          </ul>
-          <a class="btn btn-outline-primary" href="./cadastro.html">Cadastre-se </a>
-        </div>
-      </nav>
-    </header>
-  </div>
-
-  <div class="container">
-    <div class="form-image">
-      <img src="../../assets/images/logo.jpeg">
-    </div>
-    <div class="form">
-      <form action="#">
-        <div class="form-header">
-          <div class="title">
-            <h1>Cadastre-se</h1>
-          </div>
-          <div class="login-button">
-            <button><a href="#">Entrar</a></button>
-          </div>
-        </div>
-
-        <div class="input-group">
-          <div class="input-box">
-            <label for="firstname">Primeiro Nome</label>
-            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
-          </div>
-
-          <div class="input-box">
-            <label for="lastname">Sobrenome</label>
-            <input id="lastname" type="text" name="lastname" placeholder="Digite seu primeiro sobrenome" required>
-          </div>
-
-          <div class="input-box">
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-          </div>
-
-          <div class="input-box">
-            <label for="number">Celular</label>
-            <input id="number" type="tel" name="number" placeholder="(xx) xxxxx xxxx">
-          </div>
-
-          <div class="input-box">
-            <label for="password">Senha </label>
-            <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-          </div>
-
-          <div class="input-box">
-            <label for="confirmpassword">Confirme sua senha</label>
-            <input id="confirmpassword" type="password" name="confirmpassword" placeholder="Digite sua senha" required>
-          </div>
-          <div class="input-box">
-            <label for="Instituição de ensio">Instituição de ensino</label>
-            <input id="IE" type="IE" name="email" placeholder="Digite sua instituição de ensino" required>
-          </div>
-          <div class="input-box">
-            <label for="Área de atuação">Área de atuação</label>
-            <input id="IE" type="text" name="email" placeholder="Digite sua instituição de ensino" required>
-          </div>
-
-          <div class="gender-inputs">
-            <div class="gender-title">
-              <h6>Gênero</h6>
-            </div>
-
-            <div class="gender-group">
-              <div class="gender-input">
-                <input type="radio" id="female" name="gender">
-                <label for="female">Feminino</label>
-              </div>
-
-              <div class="gender-input">
-                <input type="radio" id="male" name="gender">
-                <label for="male">Masculino</label>
-              </div>
-
-              <div class="gender-input">
-                <input type="radio" id="others" name="gender">
-                <label for="others">Outros</label>
-              </div>
-
-              <div class="gender-input">
-                <input type="radio" id="none" name="gender">
-                <label for="none">Prefiro não dizer</label>
-              </div>
-
-              <div class="continue-button">
-                <button><a href="#">Cadastrar</a></button>
-              </div>
-            </div>
-
-      </form>
-    </div>
-
-    <footer class="bg-light text-center text-lg-start">
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2022 Copyright: <a class="text-dark" href="#">RecodePro 2022 - Módulo 2 Atividade prática Squad 61.</a>
+    
+    <!-- Custom styles for this template -->
+    <link href="../../css/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../../index.html">
+        <img class="img-brand" src="../../assets/images/brand-logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
+        aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navMobile">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../about.html"> Quem Somos </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../feed.html"> Feed </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+              aria-expanded="false">Atividades</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="../games/jogos.html">Jogos</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../games/licoes_leitura.html">
+                  Lições de Leitura
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="../games/leitura_assistida.html">
+                  Leitura Assistida
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../contato.html"> Contato </a>
+          </li>
+        </ul>
+        <a class="btn btn-outline-primary btn-link" href="./cadastro.html">Cadastre-se </a>
       </div>
-      <!-- Copyright -->
-    </footer>
+    </nav>
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      
+      <h2>Cadastro do Professor(a)</h2>
+      <p class="lead">Entre com os dados cadastrais abaixo:</p>
+    </div>
 
-    <script src="../../javascript/cadastro.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-      crossorigin="anonymous"></script>
-</body>
+  
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Informações</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Entre com seu nome" value="" required>
+              <div class="invalid-feedback">
+                O campo nome é obrigatório.
+              </div>
+            </div>
 
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Entre com seu sobrenome" value="" required>
+              <div class="invalid-feedback">
+                O campo sobrenome é obrigatório.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="cpf" class="form-label">CPF (somente números)</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="cpf" placeholder="123.456.789-10" required>
+              <div class="invalid-feedback">
+                  O campo CPF é obrigatório.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com.br">
+              <div class="invalid-feedback">
+                Por favor entre com um e-mail válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Senha</label>
+              <input type="text" class="form-control" id="address" placeholder="**********" required>
+              <div class="invalid-feedback">
+                A senha é obrigatória.
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="address" class="form-label">Repita a senha</label>
+              <input type="text" class="form-control" id="address" placeholder="**********" required>
+              <div class="invalid-feedback">
+                A senha deve ser igual ao campo anterior.
+              </div>
+            </div>
+
+            
+
+            <div class="col-md-3">
+              <label for="date" class="form-label">Data de nascimento</label>
+              <input type="date" class="form-control" id="date" placeholder="" required>
+              <div class="invalid-feedback">
+                A data de aniversário é obrigatória.
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <label for="myfile">Selecione o arquivo de certificação (cópia digital do diploma)</label>
+            <input type="file" id="myfile" name="myfile">
+
+          </div>
+
+          <hr class="my-4">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="isVoluntary">
+            <label class="form-check-label" for="isVoluntary">Ao clicar reconheço que sou um Professor voluntário.</label>
+          </div>
+          
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="concorda-termos-condicoes">
+            <label class="form-check-label" for="concorda-termos-condicoes">Ao clicar você concorda com os Termos e Condições.</label>
+          </div>
+
+            
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-primary btn-lg" type="submit">Enviar cadastro</button>
+        </form>
+        <br><br>
+      </div>
+    </div>
+  </main>
+  <!---Começo Rodapé-->
+  <footer class="footer-container wrapper">
+    <!-- Copyright -->
+    <p class="text-center">
+      <a href="https://github.com/squad-61" target="_blank">Recreio</a> ©2022 Copyright
+      <a href="https://recodepro.org.br/" target="_blank">RecodePro 2022</a> - Módulo 2 Atividade prática Squad 61.
+    </p>
+    <!-- Copyright -->
+  </footer>
+  <!---FIM Rodapé-->
+
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="../../javascript/form-validation.js"></script>
+  </body>
 </html>
