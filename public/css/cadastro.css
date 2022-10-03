@@ -15,6 +15,7 @@ select {
     color: black;
     cursor: pointer;
     font-size: 1rem;
+    text-align: center;
 }
 select::-ms-expand {
     display: none;
@@ -62,4 +63,13 @@ button {
 
 .buttons button:hover {
     background: #75c7fb;
+}
+
+
+.signUp {
+
+    margin-top:5%;
+    margin-left:38%;
+
+
 }
