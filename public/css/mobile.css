@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
 
 /* ============ Start Variables ============ */
 :root {
@@ -29,9 +29,9 @@
   --color-red-600: hsl(0, 70%, 10%);
 
   /* Green HUE/HSL Scale */
-  --color-green-100: hsl(150, 50%, 70%);
-  --color-green-200: hsl(150, 50%, 60%);
-  --color-green-300: hsl(150, 50%, 50%);
+  --color-green-100: hsl(85, 60%, 86%);
+  --color-green-200: hsl(85, 48%, 70%);
+  --color-green-300: hsl(85, 71%, 32%);
   --color-green-400: hsl(150, 50%, 40%);
   --color-green-500: hsl(150, 50%, 30%);
   --color-green-600: hsl(150, 50%, 20%);
@@ -108,7 +108,6 @@
   --text-color-primary: var(--color-blue-200);
   --text-color-success: var(--color-green-300);
   --text-color-warning: var(--color-yellow-500);
-
 }
 
 /* ============ End Variables ============ */
@@ -119,24 +118,36 @@
 
 body {
   font-family: "Open Sans", sans-serif !important;
+  width: 100vw;
+  height: 100vh;
 }
 
 .title {
   font-family: "Lilita One", cursive !important;
+  text-decoration-color: hsl (--bg-color-orange);
 }
 
-.subtitle {}
+.subtitle {
+}
 
-.text {}
+.text {
+  font-family: "Open Sans", sans-serif !important;
+  text-align: justify;
+  margin: 0rem -1rem 0rem -1rem;
+  padding: 3% 10% 3% 10%;
+  position: relative;
+}
 
-.text-small {}
+.text-small {
+}
 
 /* ========= End Typography ========= */
 
 /* ========= Start NavBar Style ========= */
 
 .navbar-container {
-  background-color: var(--bg-color-primary);
+  background: var(--color-green-100);
+  box-shadow: 6px 6px 10px 0px rgba(50, 50, 50, 0.22);
 }
 
 .navbar {
@@ -153,8 +164,8 @@ body {
   min-width: fit-content;
 }
 
-.navbar-brand>.img-brand {
-  width: calc(100px + 15vw);
+.navbar-brand > .img-brand {
+  width: calc(100px);
 }
 
 .nav {
@@ -167,19 +178,20 @@ body {
 
 .nav-item {
   width: 50%;
+  color: var(--color-green-300);
 }
 
 .navbar-link {
-  color: var(--text-color-black-100) !important;
+  color: var(--text-color-blue-100) !important;
 }
 
 .navbar-link:hover {
-  color: var(--text-color-orange) !important;
+  color: var(--text-color-green) !important;
 }
 
 .btn-signup {
   color: var(--text-color-green) !important;
-  border: .5px solid var(--bg-color-green) !important;
+  border: 0.5px solid var(--bg-color-green) !important;
   margin: 1rem 0;
 }
 
@@ -190,11 +202,22 @@ body {
 
 /* ========= End NavBar Style ========= */
 
+.feed {
+  font-family: "Open Sans", sans-serif !important;
+  text-align: justify;
+  margin: 0rem -1rem 0rem -1rem;
+  padding: 3% 10% 3% 10%;
+  border: 10px 20px 10px 20px;
+  position: relative;
+}
+.feed-text {
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 10px;
+}
 /* ========= Start Main Content Style ========= */
 
 .main-container {
   width: 100%;
-  background-color: var(--bg-color-beige);
 }
 
 .video-container {
@@ -210,36 +233,30 @@ body {
   height: 90%;
   cursor: pointer;
   position: absolute;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 .form-container {
   width: 100%;
-  margin: .5rem 0;
 }
-
 /* ========= End Main-Container Style ========= */
 
 /* ========= Start Footer Style ========= */
 
 .footer-container {
   width: 100%;
-  margin: 0;
-  display: flex;
-  padding: 2rem 1rem;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color-blue);
+  background-color: #e1e1e1;
+  box-shadow: 7px 7px 13px 8px rgba(50, 50, 50, 0.22);
 }
 
 .btn-link,
-.footer-container>p>a {
+.footer-container > p > a {
   color: var(--text-color-purple);
   text-decoration: none !important;
 }
 
 .btn-link:hover,
-.footer-container>p>a:hover {
+.footer-container > p > a:hover {
   color: var(--text-color-orange);
 }
 
@@ -260,7 +277,6 @@ body {
 
 /* START DESKTOP STYLE */
 @media screen AND (min-width: 700px) {
-
   /* Oculta a logo do mobile e exibe a logo do desktop */
   .visible-brand-inMobile {
     opacity: 0;
@@ -289,7 +305,7 @@ body {
     flex-direction: row;
   }
 
-  .nav>.nav-item {
+  .nav > .nav-item {
     width: fit-content;
   }
 

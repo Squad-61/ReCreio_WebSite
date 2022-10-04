@@ -1,72 +1,173 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-  <title>Leitura Assistida</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="../../css/main.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-
-<body class="text-center">
-
-  <header class="container-fluid p-0 navbar-container">
-
-    <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand .visible-brand-inMobile" href="#">
-        <img class="img-brand" src="../../assets/images/brand-logo.png">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
-        aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between" id="navMobile">
-        <a class="navbar-brand visible-brand-inDesktop" href="#">
-          <img class="img-brand" src="../../assets/images/brand-logo.png">
+<html lang="pt-BR">
+  <head>
+    <title>Recreio - Jogos</title>
+    <link rel="stylesheet" href="../../css/mobile.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/logoicon.png"
+      type="image/x-icon"
+    />
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS v5.2.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="text-center">
+    <header class="container-fluid p-0 navbar-container">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand .visible-brand-inMobile" href="/index.html">
+          <img class="img-brand" src="/public/assets/images/logo.png" />
         </a>
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link navbar-link" href="../about.html"> Quem Somos </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-link" href="../feed.html"> Feed </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link navbar-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Atividades</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="../games/">Jogos</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="./licoes_leitura.html">
-                  Lições de Leitura
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMobile"
+          aria-controls="navMobile"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navMobile"
+        >
+          <a class="navbar-brand visible-brand-inDesktop" href="#"> </a>
+          <b>
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="/public/pages/about.html">
+                  QUEM SOMOS
                 </a>
               </li>
-              <li>
-                <a class="dropdown-item" href="./leitura_assistida.html">
-                  Leitura Assistida
+              <li class="nav-item">
+                <a class="nav-link navbar-link" href="/public/pages/feed.html">
+                  FEED
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link navbar-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                  aria-expanded="false"
+                  >ATIVIDADES</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="/public/pages/games/"
+                      >Jogos</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/public/pages/games/licoes_leitura.html"
+                    >
+                      Lições de Leitura
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/public/pages/games/leitura_assistida.html"
+                    >
+                      Leitura Assistida
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link navbar-link"
+                  href="/public/pages/contato.html"
+                >
+                  CONTATO
                 </a>
               </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link navbar-link" href="../contato.html"> Contato </a>
-          </li>
-        </ul>
-        <a class="btn btn-outline-primary btn-signup" href="../cadastro/cadastro.html"> Cadastre-se </a>
-      </div>
-    </nav>
-  </header>
-  
-  <main>
-    <h1 style="color:black; font-size:40pt; text-align:center;"> EM CONSTRUÇÃO</h1>
-  </main>
+          </b>
+          <a
+            class="btn btn-outline-primary btn-signup"
+            href="/public/pages/cadastro/cadastro.html"
+          >
+            Cadastre-se
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!---Termino NavBar-->
+    <br>
+    <br>
+    <br>
+    <h1> Em Breve..</h1>
+    <br>
+    <br>
+    <br>
+    <br>
 
+  <!---INICIO RODAPÉ-->
+  <footer class=" footer-container py-5 conteiner-fluid row">
+    <div class="col-6 col-md">
+        <img width= "200px + 10vw" src="/public/assets/images/logo.png">
+    </div>
+    <div class="col-6 col-md">
+          <h5 class="title text-secondary">
+            Termos:
+          </h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="https://recodepro.org.br/" target="_blank">Recode Pro</a></li>
+          <li><a class="text-muted" href="" target="_blank">Termos e Condições</a></li>
+          <li><a class="text-muted" href=""target="_blank">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+          <h5 class="title text-secondary">
+            Canais de Atendimento:
+          </h5>
+          <p>De segunda á sexta-feira: 08:00 ás 20:00</p>
+          <img class="img-fluid" src="/public/assets/images/contato.png"> +55 00 0000-0000 </a>
+          <p><img src="/public/assets/images/email.png"> recreio.org@gmail.com </a> </p>
+      </div>
+      <div class="col-6 col-md">
+          <h5  class="title text-secondary">
+            Follow us:
+          </h5>
+          <ul class="list-unstyled text-small">
+          <a href="https://github.com/Squad-61/" target="_blank"> <img src="/public/assets/images/github.png"> </a>
+          <a href="https://www.instagram.com/" target="_blank"> <img src="/public/assets/images/instagram.png"> </a>
+          <a href="https://pt-br.facebook.com//" target="_blank"> <img src="/public/assets/images/facebook.png"> </a>
+          <a href="https://br.linkedin.com/" target="_blank"> <img src="/public/assets/images/linkedIn.png" </a>
+          <a href="https://www.youtube.com/" target="_blank"> <img src="/public/assets/images/youtube.png"> </a>
+         </ul>
+      </div> 
+    <hr>
+    <section class ="d-flex justify-content-center align-items-center">
+      &copy: Squad 61.
+      <img width="60px + 15vw" src="/public/assets/images/logosquad.png">
+    </section>
+    </footer>
+    </div> 
+</footer> 
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
@@ -74,5 +175,5 @@
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
 </body>
-
 </html>
+

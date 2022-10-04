@@ -108,3 +108,4 @@ dist
 
 # Other Files and Folders
 .*ignore/**
+.*vscode/**
