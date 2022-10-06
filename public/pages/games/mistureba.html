@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -6,20 +7,35 @@
   <title>Recreio - Jogo Mistureba</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="../../css/games/mistureba.css">
+  <link rel="stylesheet" href="./public/css/mobile.css">
+  <link rel="stylesheet" href="../../../public/css/mobile.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="../../assets/images/logoicon.png" type="image/x-icon">
+  
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
+</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body class="container">
 
+
+
+
+
+
+
+<body >
+<div class="container">
   <header class="container-fluid p-0 navbar-container">
-
     <nav class="navbar navbar-expand-lg">
-      <a class="navbar-brand .visible-brand-inMobile" href="#">
-        <img class="img-brand" src="../../assets/images/brand-logo.png">
+      <a class="navbar-brand .visible-brand-inMobile" href="../../../index.html">
+        <img class="img-brand" src="../../../public/assets/images/logo.png">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobile"
         aria-controls="navMobile" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,101 +43,205 @@
       </button>
       <div class="collapse navbar-collapse justify-content-between" id="navMobile">
         <a class="navbar-brand visible-brand-inDesktop" href="#">
-          <img class="img-brand" src="../../assets/images/brand-logo.png">
         </a>
+        <b>
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link navbar-link" href="../about.html"> Quem Somos </a>
+            <a class="nav-link navbar-link" href="../../../public/pages/about.html"> QUEM SOMOS </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-link" href="../feed.html"> Feed </a>
+            <a class="nav-link navbar-link" href="../../../public/pages/feed.html"> FEED </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link navbar-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Atividades</a>
+              aria-expanded="false">ATIVIDADES</a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="../games/">Jogos</a>
+                <a class="dropdown-item" href="../../../public/pages/games/">Jogos</a>
               </li>
               <li>
-                <a class="dropdown-item" href="../games/licoes_leitura.html">
+                <a class="dropdown-item" href="../../../public/pages/games/licoes_leitura.html">
                   Lições de Leitura
                 </a>
               </li>
               <li>
-                <a class="dropdown-item" href="../games/leitura_assistida.html">
+                <a class="dropdown-item" href="../../../public/pages/games/leitura_assistida.html">
                   Leitura Assistida
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link navbar-link" href="../contato.html"> Contato </a>
+            <a class="nav-link navbar-link" href="../../../public/pages/contato.html"> CONTATO </a>
           </li>
         </ul>
-        <a class="btn btn-outline-primary btn-signup" href="../cadastro/cadastro.html"> Cadastre-se </a>
+        </b>.
+        <a class="btn btn-outline-primary btn-signup" href="../../../public/pages/cadastro/cadastro.html"> Cadastre-se </a>
       </div>
     </nav>
   </header>
-
+<!-- nav bar end -->
   <main>
+    <!--header start-->
     <header>
-      <DIV class="game-titlle">
-        <h1>VAMOS DESEMBARALHAR ALMUMAS PALAVRAS?</h1>
-        <hr>
-        <h4>TENTE DESCOBRIR QUAL É A PALAVRA DENTRO DO QUADRO</h4>
-        <h4>ESCREVENDO ELA NO CAMPO COLORIDO!</h4>
-      </DIV>
-      <hr>
+      
     </header>
-    <div class="Box-Game">
-      <div class="word-canva">
-        <h1 id="word">ACOLSE</h1>
-      </div>
-      <hr>
-      <div class="answer">
-        <h3>DESEMBARALHE A PALAVRA ESCRITA ACIMA </h3>
-        <input type="text" name="resposta" id="answer">
-        <br><br>
-        <div>
-          <button class="btn btn-primary btn-lg" type="button" onclick="startGame()">INICIAR</button>
-          <button class="btn btn-primary btn-lg" type="submit" id="botao" onclick="test()">VERIFICAR</button>
-          <br><br>
+    <!--header end-->
 
+    <!--box game start -->
+    <aside class="teste">
+      <div id="mai" class="container">
+        <hr>
+        <button type="button" id="how" onclick="howToPlay()" class="btn btn-outline-info btn-sm">
+          <strong>
+            &quest;  
+          </strong>
+         </button> 
+        <h1>QUAL SERÁ A PALAVRA EMBARALHADA ?</h1>
+        <div id="BoardGame">
+          <div id="gameOver">
+            <br>
+              <p> GAME OVER</p> 
+              <h3>PONTOS</h3>
+              <h4 id="score"></h4>
+            <br>
+              <button type="button" onclick='startGame()'class="btn btn-primary btn-lg">
+                REINICIAR
+               </button>
+               <button type="button" id='qq'class="btn btn-success btn-lg ">
+               <a href="../licoes_leitura.html">VER AULAS</a>
+               </button>
+          </div>
+          <div id="howToPlay">
+            <p id="aces"> 
+              Mistureba é um jogo onde você tem de acertar qual é a palavra embaralhada.
+              Caso seja uma palavra mais difícil é possível pedir uma ajuda clicando no botão de lâmpada
+              &#128161;, assim ajudando na jogatina.
+              Eaí já descobriu qual é a palavra ?
+             
+            </p> <button alt="Botão de ouvir"  onclick="Speak2()" type="button" class="btn btn-outline-danger btn-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                  <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                  <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+                </svg>
+              </button>
+              
+          </div>
+          <form>
+            <br>
+              <main id="table">
+              </main>
+             <br>
+            <div class="btns">    
+              <button type="button" id="dica" class="btn btn-info btn-lg" onclick="tip()" >
+                <strong>	 
+                   &#128161;
+                </strong>
+              </button>
+              <button type="button" onclick="startGame()" class="btn btn-success btn-lg ">
+                INICIAR
+              </button>
+              <button id="verificar"  type="button" class="btn btn-success btn-lg"  >
+                VERIFICAR
+              </button>
+            </div>
+          </form>
+          <div class="search">
+             <input id="pp" type="text" onkeyup="this.value = this.value.toUpperCase();" placeholder="QUAL A PALAVRA..." required>
+          </div>
         </div>
-
-      </div>
-      <hr>
-    </div>
-    <div class="result1">
-      <div class="result">
-        <h4>PONTOS TOTAIS</h4>
-        <h4>0</h4>
-
-      </div>
-
-    </div>
-    <hr>
+        <div class="dd" class="jambostron">
+          <div id="showTip" class="alert alert-warning" role="alert">
+            <h2>
+              &#128161; DICA..
+            </h2>
+            <p id="tipText">
+              CLIQUE NO BOTÃO AO LADO DE INICIAR PARA TER ACESSO A UM DICA.
+            </p>
+             <button alt="Botão de ouvir" id="aces" onclick="Speak()" type="button" class="btn btn-outline-danger">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
+                <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                <path d="M10.025 8a4.486 4.486 0 0 1-1.318 3.182L8 10.475A3.489 3.489 0 0 0 9.025 8c0-.966-.392-1.841-1.025-2.475l.707-.707A4.486 4.486 0 0 1 10.025 8zM7 4a.5.5 0 0 0-.812-.39L3.825 5.5H1.5A.5.5 0 0 0 1 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 7 12V4zM4.312 6.39 6 5.04v5.92L4.312 9.61A.5.5 0 0 0 4 9.5H2v-3h2a.5.5 0 0 0 .312-.11z"/>
+              </svg>
+            </button>
+            <button type="button"  class="btn btn-outline-success" onclick="tip()" >
+             <strong>	 
+               OK
+             </strong>
+           </button>
+          </div>
+        </div> 
+      </div>   
+    </aside>
   </main>
+ </div> 
+  
 
-  <!---Começo Rodapé-->
-  <footer class="bg-light text-center text-lg-start">
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-      © 2022 Copyright:
-      <a class="text-dark" href="#">RecodePro 2022 - Módulo 2 Atividade prática Squad 61.</a>
+
+
+
+<!---INICIO RODAPÉ-->
+<footer class=" footer-container py-5 conteiner-fluid row">
+  <div class="col-6 col-md">
+    <img width= "200px + 10vw" src="../../../public/assets/images/logo.png">
+  </div>
+  <div class="col-6 col-md">
+        <h5 class="title text-secondary">
+          Termos:
+        </h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="https://recodepro.org.br/" target="_blank">Recode Pro</a></li>
+        <li><a class="text-muted" href="" target="_blank">Termos e Condições</a></li>
+        <li><a class="text-muted" href=""target="_blank">Política de Privacidade</a></li>
+      </ul>
     </div>
-    <!-- Copyright -->
+    <div class="col-6 col-md">
+        <h5 class="title text-secondary">
+          Canais de Atendimento:
+        </h5>
+        <p>De segunda á sexta-feira: 08:00 ás 20:00</p>
+        <img class="img-fluid" src="../../../public/assets/images/contato.png"> +55 00 0000-0000 </a>
+        <p><img src="../../../public/assets/images/email.png"> recreio.org@gmail.com </a> </p>
+    </div>
+    <div class="col-6 col-md">
+        <h5  class="title text-secondary">
+          Follow us:
+        </h5>
+        <ul class="list-unstyled text-small">
+        <a href="https://github.com/Squad-61/" target="_blank"> <img src="../../../public/assets/images/github.png"> </a>
+        <a href="https://www.instagram.com/" target="_blank"> <img src="../../../public/assets/images/instagram.png"> </a>
+        <a href="https://pt-br.facebook.com//" target="_blank"> <img src="../../../public/assets/images/facebook.png"> </a>
+        <a href="https://br.linkedin.com/" target="_blank"> <img src="../../../public/assets/images/linkedIn.png"> </a>
+        <a href="https://www.youtube.com/" target="_blank"> <img src="../../../public/assets/images/youtube.png"> </a>
+       </ul>
+    </div> 
+  <hr>
+  <section class ="d-flex justify-content-center align-items-center">
+    &copy: Squad 61.
+    <img width="60px + 15vw" src="../../../public/assets/images/logosquad.png">
+  </section>
   </footer>
-  <!---FIM Rodapé-->
+  </div> 
+</footer> 
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+  integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+  integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+  crossorigin="anonymous"></script>
 
-  <script src="./assets/letrasembaralhadas.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+  <script src="../../javascript/mistureba.js"></script>
 </body>
 
 </html>
