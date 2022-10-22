@@ -1,170 +1,71 @@
-/*--- elements ---*/
-html{
+html, body{
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; 
-  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  background-color: #187498;
+  border-radius: 10px
+  
 }
 
-body{
-  background-image: url("../../assets/images/games.img/roxo.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;
-  height:100%;
- 
-}
-
-h1{
-  color: blue;
-  padding-top: 7%;
-  padding-bottom: 3%;
-  font-family: 'Roboto Condensed', sans-serif;
-  margin: px;
-}
-
-label{
-  margin: 2%;
-  font-size: 60px;
-  font-family: 'Roboto Condensed', sans-serif;
-  border: solid 3px black;
-  border-radius: 30%;
-  height: 15vh;
-  width: 15vh;
-  align-items:center;
-}
-
-input{
-  position: inline;
-  align-items: center;
-  /*display: inline-block;
-  align-content:center ;
-  margin-left: ;
-  margin-right: ;*/
-  top:70%;
-  left: 50%;
-  /*transform: translate(-50%, -50%);*/
-  color: white;
-  font-size: 16px;
-  background: transparent;
-  width: 25px;
-  height: 25 px;
-  padding: 10px;
-  border: solid 3px white;
-  outline: none;
-  border-radius: 35px;
-  transition: all 0.5s;
-  box-shadow: 0 4px 8px rgba (0,0,0,0.2) 0px 20px 0 #9A86FD;
-  font-family: 'Roboto Condensed', sans-serif;
-
-}
-
-input ::placeholder{
-  color:yellow;
-  opacity: 0;
-  transition: opacity 150ms ease-out;
-}
-
-input :focus ::placeholder{
-opacity:1;
-}
-
-input :houver{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) 0 9px 20px 0 #ff8878;
-}
-input:focus,input:not(:placeholder-shown){
-    width: 250px;
-    box-shadow: 0 4px 6px 0 rgba(o,o,o, 0.2) 0 6px 20px 0 #ff8878;
-}
-
-/*--- class ---*/
-.teste{
-  padding-bottom: 4vh;
-}
-
-.dica{
-  border-radius: 90%;
-  background-color: blue;
-  color: white;
-}
-
-/*--- id's ---*/
-#mai{
-  background-image: url("../../assets/images/games.img/back2.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position:center;
-  height:100vh;
+.game-titlle{
+  margin-top: 2rem;
   text-align: center;
-}
-
-#how{
-  display: block;
-  margin-left: auto;
-  color: orangered;
-}
-
-#dica{
-  display: none;
-}
-
-#entrada{
-  border-radius: 10px 10px 10px 10px;
-}
-
-#howToPlay{
   color: black;
-  display: block;
-  justify-content: space-around;
   
 }
 
-#pp{
-  margin-top: 50px;
+.word-canva{
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
 }
+ .word-canva > h1 {
+  font-size: 2.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  height: 5rem;
+  background-color:#187498;
+  border: solid #187498;
+  color: white;
 
-#showTip{
-  font-family: 'Roboto Condensed', sans-serif;
-  display:none;
-  color: black;
-  align-content: center;
-  position: absolute;
+}
+
+.answer{
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+  letter-spacing:2px ;
+  color: #eb5353;
+}
+
+#answer{
+  height: 4rem;
   width: 50%;
-  height: 25%;
+  border: none;
+  border-bottom: solid black;
+  border-radius: 7px;
+  outline: none;
+  text-align: center;
+  
+}
+.Box-Game{
+  border:solid #36ae7c;
+  border-radius: 10px;
+}
+
+.result1{
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  align-items: center;
-  top: 55%;
-  left: 25%;
-
 }
-
-#verificar{
-  display: none;
-}
-
-#gameOver{
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  background-color: rgba(5,0,0,0.9);
-  color: white;
-  font-size: 40px;
-  display:none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  top: 25;
-  left: 25%;
-  border-radius: 15%;
-}
-
-#table{
-  color: white;
-}
-#qq{
-  text-decoration: none;
+.result{
+  border:dotted #f9d923 ;
+  background-color: antiquewhite;
+  width: 40%;
+  height:7rem;
+  text-align: center;
+  margin-top: 3px;
+  border-radius: 10px;
 }
