@@ -1,0 +1,73 @@
+/*
+  Author: Julio Ceno
+  Repositories: https://github.com/julioceno/hangmanGame.github.io
+  Alterado por: Guilherme A.F Sales
+*/
+
+#button-reload {
+  cursor: pointer;
+}
+
+.pop-up-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+
+
+  position: absolute;
+  z-index: 10;
+
+  display: none;
+
+}
+
+.pop-up {
+  background-color: var(--color-white-secondary);
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  border: 1px solid var(--color-black-secondary);
+
+  position: absolute;
+  margin: 30vh 25vw;
+
+  font-size: 2.5rem;
+}
+
+.pop-up p {
+  text-align: center;
+  margin-top: 2.5rem;
+  color: var(--color-black);
+}
+
+.pop-up div {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+.pop-up button {
+  background-color: var(--color-white-secondary);
+  margin: 2rem 8rem;
+}
+
+.pop-up button img {
+  height: 3rem;
+}
+
+@keyframes appear {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-appear {
+  animation-name: appear;
+  animation-duration: 300ms;
+}
